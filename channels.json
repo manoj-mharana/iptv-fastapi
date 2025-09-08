@@ -1,197 +1,198 @@
 [
   {
-    "id": "rajasthanpatrika",
-    "name": "Rajasthan Patrika",
-    "url": "https://www.youtube.com/@RajasthanPatrikaTV/live"
-  },
-  {
-    "id": "aajtak",
-    "name": "Aaj Tak",
-    "url": "https://www.youtube.com/@aajtak/live"
-  },
-  {
-    "id": "indiatvnews",
-    "name": "India TV",
-    "url": "https://www.youtube.com/@indiatvnews/live"
-  },
-  {
-    "id": "aajtak_hd",
-    "name": "AajTak HD",
-    "url": "https://www.youtube.com/@aajtak/live"
-  },
-  {
-    "id": "abpnews",
-    "name": "ABP News",
-    "url": "https://www.youtube.com/@ABPNEWS/live"
-  },
-  {
-    "id": "ndtvindia",
-    "name": "NDTV India",
-    "url": "https://www.youtube.com/@NDTVIndia/live"
-  },
-  {
-    "id": "ndtvrajasthan",
-    "name": "NDTV Rajasthan",
-    "url": "https://www.youtube.com/@NDTVRajasthan/live"
-  },
-  {
-    "id": "news18rajasthan",
-    "name": "News18 Rajasthan",
-    "url": "https://www.youtube.com/@News18Rajasthan/live"
-  },
-  {
-    "id": "zeerajasthan",
-    "name": "Zee Rajasthan",
-    "url": "https://www.youtube.com/@ZeeRajasthanNews/live"
-  },
-  {
-    "id": "firstindianews",
-    "name": "First India News",
-    "url": "https://www.youtube.com/@firstindiatv/live"
-  },
-  {
-    "id": "a1tv",
-    "name": "A1TV",
-    "url": "https://www.youtube.com/@A1TVNEWSOfficial/live"
-  },
-  {
-    "id": "news18india",
-    "name": "News18 India",
-    "url": "https://www.youtube.com/@News18India/live"
-  },
-  {
-    "id": "indiatv",
-    "name": "India TV",
-    "url": "https://www.youtube.com/@IndiaTV/live"
-  },
-  {
-    "id": "ddnews",
-    "name": "DD News",
-    "url": "https://www.youtube.com/@DDnews/live"
-  },
-  {
-    "id": "ddnational",
-    "name": "DD National",
-    "url": "https://www.youtube.com/@DoordarshanNational/live"
-  },
-  {
-    "id": "ddbharti",
-    "name": "DD Bharti",
-    "url": "https://www.youtube.com/@ddbharati/live"
-  },
-  {
-    "id": "timesnownavbharat",
-    "name": "TIMES NOW Navbharat",
-    "url": "https://www.youtube.com/@timesnownavbharat/live"
-  },
-  {
-    "id": "jansatta",
-    "name": "Jansatta",
-    "url": "https://www.youtube.com/@Jansatta/live"
-  },
-  {
-    "id": "goodnewstoday",
-    "name": "Good News Today",
-    "url": "https://www.youtube.com/@GoodNewsTodayOfficial/live"
-  },
-  {
-    "id": "zeedelhincr",
-    "name": "Zee Delhi-NCR Haryana",
-    "url": "https://www.youtube.com/@ZeeDelhiNcrHaryana/live"
-  },
-  {
-    "id": "republicbharat",
-    "name": "Republic Bharat",
-    "url": "https://www.youtube.com/@RepublicBharat/live"
-  },
-  {
-    "id": "tv9bharatvarsh",
-    "name": "TV9 Bharatvarsh",
-    "url": "https://www.youtube.com/@TV9Bharatvarsh/live"
-  },
-  {
-    "id": "anibharat",
-    "name": "ANI Bharat",
-    "url": "https://www.youtube.com/@ANINewsBharat/live"
-  },
-  {
-    "id": "newsnation",
-    "name": "News Nation",
-    "url": "https://www.youtube.com/@NewsNationTV/live"
-  },
-  {
-    "id": "news24",
-    "name": "News 24",
-    "url": "https://www.youtube.com/@News24thinkfirst/live"
-  },
-  {
-    "id": "etnowswadesh",
-    "name": "ET Now Swadesh",
-    "url": "https://www.youtube.com/@etnowswadesh/live"
-  },
-  {
-    "id": "sansadtv",
-    "name": "Sansad TV",
-    "url": "https://www.youtube.com/@SansadTV/live"
-  },
-  {
-    "id": "thelallantop",
-    "name": "The Lallantop",
-    "url": "https://www.youtube.com/@TheLallantop/live"
-  },
-  {
-    "id": "firstpost",
-    "name": "Firstpost",
-    "url": "https://www.youtube.com/@Firstpost/live"
-  },
-  {
-    "id": "cnnnews18",
-    "name": "CNN-News18",
-    "url": "https://www.youtube.com/@cnnnews18/live"
-  },
-  {
-    "id": "timesnow",
-    "name": "Times Now",
-    "url": "https://www.youtube.com/@TimesNow/live"
-  },
-  {
-    "id": "indianexpress",
-    "name": "The Indian Express",
-    "url": "https://www.youtube.com/@indianexpress/live"
-  },
-  {
-    "id": "tipsmusic",
-    "name": "Tips Music",
-    "url": "https://www.youtube.com/TipsOfficial/live"
-  },
-  {
-    "id": "boomeranguk",
-    "name": "Boomerang UK",
-    "url": "https://www.youtube.com/@BoomerangUK/live"
-  },
-  {
-    "id": "spiderman",
-    "name": "Spider-Man",
-    "url": "https://www.youtube.com/@Lifehero286/live"
-  },
-  {
-    "id": "lovenature",
-    "name": "Love Nature",
-    "url": "https://www.youtube.com/lovenature/live"
-  },
-  {
-    "id": "skynews",
-    "name": "Sky News",
-    "url": "https://www.youtube.com/@SkyNews/live"
-  },
-  {
-    "id": "aljazeera",
-    "name": "Al Jazeera English",
-    "url": "https://www.youtube.com/@aljazeeraenglish/live"
-  },
-  {
-    "id": "bbcearth",
-    "name": "BBC Earth",
-    "url": "https://www.youtube.com/@bbcearth/live"
-  }
+  "id": "rajasthanpatrika",
+  "name": "Rajasthan Patrika",
+  "url": "https://www.youtube.com/@RajasthanPatrikaTV/live"
+},
+{
+  "id": "aajtak",
+  "name": "Aaj Tak",
+  "url": "https://www.youtube.com/@aajtak"
+},
+{
+  "id": "indiatvnews",
+  "name": "India TV",
+  "url": "https://www.youtube.com/@indiatvnews"
+},
+{
+  "id": "aajtak_hd",
+  "name": "AajTak HD",
+  "url": "https://www.youtube.com/@aajtak/live"
+},
+{
+  "id": "abpnews",
+  "name": "ABP News",
+  "url": "https://www.youtube.com/@ABPNEWS/live"
+},
+{
+  "id": "ndtvindia",
+  "name": "NDTV India",
+  "url": "https://www.youtube.com/@NDTVIndia/live"
+},
+{
+  "id": "ndtvrajasthan",
+  "name": "NDTV Rajasthan",
+  "url": "https://www.youtube.com/@NDTVRajasthan/live"
+},
+{
+  "id": "news18rajasthan",
+  "name": "News18 Rajasthan",
+  "url": "https://www.youtube.com/@News18Rajasthan/live"
+},
+{
+  "id": "zeerajasthan",
+  "name": "Zee Rajasthan",
+  "url": "https://www.youtube.com/@ZeeRajasthanNews/live"
+},
+{
+  "id": "firstindianews",
+  "name": "First India News",
+  "url": "https://www.youtube.com/@firstindiatv/live"
+},
+{
+  "id": "a1tv",
+  "name": "A1TV",
+  "url": "https://www.youtube.com/@A1TVNEWSOfficial/live"
+},
+{
+  "id": "news18india",
+  "name": "News18 India",
+  "url": "https://www.youtube.com/@News18India/live"
+},
+{
+  "id": "indiatv",
+  "name": "India TV",
+  "url": "https://www.youtube.com/@IndiaTV/live"
+},
+{
+  "id": "ddnews",
+  "name": "DD News",
+  "url": "https://www.youtube.com/@DDnews/live"
+},
+{
+  "id": "ddnational",
+  "name": "DD National",
+  "url": "https://www.youtube.com/@DoordarshanNational/live"
+},
+{
+  "id": "ddbharti",
+  "name": "DD Bharti",
+  "url": "https://www.youtube.com/@ddbharati/live"
+},
+{
+  "id": "timesnownavbharat",
+  "name": "TIMES NOW Navbharat",
+  "url": "https://www.youtube.com/@timesnownavbharat/live"
+},
+{
+  "id": "jansatta",
+  "name": "Jansatta",
+  "url": "https://www.youtube.com/@Jansatta/live"
+},
+{
+  "id": "goodnewstoday",
+  "name": "Good News Today",
+  "url": "https://www.youtube.com/@GoodNewsTodayOfficial/live"
+},
+{
+  "id": "zeedelhincr",
+  "name": "Zee Delhi-NCR Haryana",
+  "url": "https://www.youtube.com/@ZeeDelhiNcrHaryana/live"
+},
+{
+  "id": "republicbharat",
+  "name": "Republic Bharat",
+  "url": "https://www.youtube.com/@RepublicBharat/live"
+},
+{
+  "id": "tv9bharatvarsh",
+  "name": "TV9 Bharatvarsh",
+  "url": "https://www.youtube.com/@TV9Bharatvarsh/live"
+},
+{
+  "id": "anibharat",
+  "name": "ANI Bharat",
+  "url": "https://www.youtube.com/@ANINewsBharat/live"
+},
+{
+  "id": "newsnation",
+  "name": "News Nation",
+  "url": "https://www.youtube.com/@NewsNationTV/live"
+},
+{
+  "id": "news24",
+  "name": "News 24",
+  "url": "https://www.youtube.com/@News24thinkfirst/live"
+},
+{
+  "id": "etnowswadesh",
+  "name": "ET Now Swadesh",
+  "url": "https://www.youtube.com/@etnowswadesh/live"
+},
+{
+  "id": "sansadtv",
+  "name": "Sansad TV",
+  "url": "https://www.youtube.com/@SansadTV/live"
+},
+{
+  "id": "thelallantop",
+  "name": "The Lallantop",
+  "url": "https://www.youtube.com/@TheLallantop/live"
+},
+{
+  "id": "firstpost",
+  "name": "Firstpost",
+  "url": "https://www.youtube.com/@Firstpost/live"
+},
+{
+  "id": "cnnnews18",
+  "name": "CNN-News18",
+  "url": "https://www.youtube.com/@cnnnews18/live"
+},
+{
+  "id": "timesnow",
+  "name": "Times Now",
+  "url": "https://www.youtube.com/@TimesNow/live"
+},
+{
+  "id": "indianexpress",
+  "name": "The Indian Express",
+  "url": "https://www.youtube.com/@indianexpress/live"
+},
+{
+  "id": "tipsmusic",
+  "name": "Tips Music",
+  "url": "https://www.youtube.com/TipsOfficial/live"
+},
+{
+  "id": "boomeranguk",
+  "name": "Boomerang UK",
+  "url": "https://www.youtube.com/@BoomerangUK/live"
+},
+{
+  "id": "spiderman",
+  "name": "Spider-Man",
+  "url": "https://www.youtube.com/@Lifehero286/live"
+},
+{
+  "id": "lovenature",
+  "name": "Love Nature",
+  "url": "https://www.youtube.com/lovenature/live"
+},
+{
+  "id": "skynews",
+  "name": "Sky News",
+  "url": "https://www.youtube.com/@SkyNews/live"
+},
+{
+  "id": "aljazeera",
+  "name": "Al Jazeera English",
+  "url": "https://www.youtube.com/@aljazeeraenglish/live"
+},
+{
+  "id": "bbcearth",
+  "name": "BBC Earth",
+  "url": "https://www.youtube.com/@bbcearth/live"
+}
 ]
+
