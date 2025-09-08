@@ -1,40 +1,64 @@
-from fastapi import FastAPI, Response
+import os
 import json
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import RedirectResponse
 import yt_dlp
 
 app = FastAPI()
 
-# चैनल list channels.json से load
+# Channels.json load karo
 with open("channels.json", "r", encoding="utf-8") as f:
     channels = json.load(f)
 
-def get_stream_url(youtube_url: str) -> str:
-    """YouTube live से direct .m3u8 stream निकाले"""
+
+def get_stream_url(youtube_url: str):
+    """
+    YouTube se direct stream URL nikalta hai (cookies ke sath).
+    Render me YT_COOKIES env variable set hona chahiye.
+    """
+    cookies_file = "cookies.txt"
+
+    # Agar env me cookies available hain to ek baar file me likh do
+    if os.getenv("YT_COOKIES"):
+        with open(cookies_file, "w", encoding="utf-8") as f:
+            f.write(os.getenv("YT_COOKIES"))
+
     ydl_opts = {
-        "format": "best[ext=mp4]/best",
+        "format": "best",
         "quiet": True,
-        "nocheckcertificate": True,
+        "cookies": cookies_file if os.getenv("YT_COOKIES") else None,
     }
-    try:
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            info = ydl.extract_info(youtube_url, download=False)
-            return info["url"]
-    except Exception as e:
-        print(f"⚠️ Error extracting stream for {youtube_url}: {e}")
-        return None
+
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        info = ydl.extract_info(youtube_url, download=False)
+        return info["url"]
 
 
 @app.get("/")
-def root():
-    return {"message": "✅ IPTV FastAPI Server Running"}
+def home():
+    return {"message": "✅ IPTV API is running! Use /channels to see list."}
 
 
-@app.get("/playlist.m3u")
-def playlist():
-    """M3U playlist generate करके return करेगा"""
-    m3u_content = "#EXTM3U\n"
-    for ch in channels:
-        stream_url = get_stream_url(ch["url"])
-        if stream_url:
-            m3u_content += f'#EXTINF:-1,{ch["name"]}\n{stream_url}\n'
-    return Response(content=m3u_content, media_type="audio/x-mpegurl")
+@app.get("/channels")
+def get_channels():
+    """Sabhi channels ka list dega"""
+    return channels
+
+
+@app.get("/play/{channel_id}")
+def play_channel(channel_id: str):
+    """Channel ka direct playable stream URL return karega"""
+    channel = next((c for c in channels if c["id"] == channel_id), None)
+    if not channel:
+        raise HTTPException(status_code=404, detail="Channel not found")
+
+    url = channel["url"]
+
+    # Agar YouTube link hai to cookies ke sath stream nikaalo
+    if "youtube.com" in url or "youtu.be" in url:
+        try:
+            url = get_stream_url(url)
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Error fetching YouTube stream: {str(e)}")
+
+    return RedirectResponse(url)
