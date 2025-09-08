@@ -1,38 +1,40 @@
 from fastapi import FastAPI, Response
-import subprocess
 import json
-import os
+import yt_dlp
 
 app = FastAPI()
 
-# channels.json se channel list load karega
+# चैनल list channels.json से load
 with open("channels.json", "r", encoding="utf-8") as f:
-    CHANNELS = json.load(f)
+    channels = json.load(f)
 
-def generate_m3u():
-    lines = ["#EXTM3U"]
-    for name, url in CHANNELS.items():
-        try:
-            # YouTube se direct stream URL nikalna
-            result = subprocess.run(
-                ["yt-dlp", "-g", url],
-                capture_output=True,
-                text=True,
-                timeout=30
-            )
-            stream_url = result.stdout.strip().split("\n")[-1]
-            if stream_url.startswith("http"):
-                lines.append(f'#EXTINF:-1 tvg-logo="", {name}')
-                lines.append(stream_url)
-        except Exception as e:
-            print(f"Error for {name}: {e}")
-    return "\n".join(lines)
+def get_stream_url(youtube_url: str) -> str:
+    """YouTube live से direct .m3u8 stream निकाले"""
+    ydl_opts = {
+        "format": "best[ext=mp4]/best",
+        "quiet": True,
+        "nocheckcertificate": True,
+    }
+    try:
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            info = ydl.extract_info(youtube_url, download=False)
+            return info["url"]
+    except Exception as e:
+        print(f"⚠️ Error extracting stream for {youtube_url}: {e}")
+        return None
+
 
 @app.get("/")
-def home():
-    return {"status": "running", "total_channels": len(CHANNELS)}
+def root():
+    return {"message": "✅ IPTV FastAPI Server Running"}
+
 
 @app.get("/playlist.m3u")
 def playlist():
-    m3u_data = generate_m3u()
-    return Response(content=m3u_data, media_type="audio/x-mpegurl")
+    """M3U playlist generate करके return करेगा"""
+    m3u_content = "#EXTM3U\n"
+    for ch in channels:
+        stream_url = get_stream_url(ch["url"])
+        if stream_url:
+            m3u_content += f'#EXTINF:-1,{ch["name"]}\n{stream_url}\n'
+    return Response(content=m3u_content, media_type="audio/x-mpegurl")
